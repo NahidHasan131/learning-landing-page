@@ -34,10 +34,10 @@ const Navbar = () => {
   const toggleMenu = () => setIsNavbarMenu(!isNavbarMenu);
 
   return(
-    <nav className="sticky top-0 z-50 backdrop-blur-lg border-b border-neutral-700/10">
+    <nav className="relative z-20">
         <div className="container py-10 flex justify-between items-center relative">
           <div>
-            <h1 className="font-bold text-2xl">Wind Coder</h1>
+            <h1 className="font-bold text-2xl">Wind <span className="text-secondary">Coder</span></h1>
           </div>
 
           {/* Desktop Menu */}
@@ -45,7 +45,7 @@ const Navbar = () => {
             <ul className="flex items-center gap-3">
               {NavbarMenu.map((menu) => (
                 <li key={menu.id}>
-                  <a href={menu.link} className="inline-block py-2 px-3 hover:text-secondary relative group">
+                  <a href={menu.link} className="inline-block font-medium py-2 px-3 hover:text-secondary relative group">
                     <div className="w-2 h-2 bg-secondary absolute mt-4 rounded-full left-1/2 -translate-x-1/2 top-1/2 bottom-0 group-hover:block hidden"></div>
                     {menu.title}
                   </a>
@@ -69,7 +69,7 @@ const Navbar = () => {
             <ul className="flex flex-col gap-2 py-2 items-center">
               {NavbarMenu.map((item) => (
                 <li key={item.id} className="w-full text-center py-2">
-                  <a href={item.link}  className="inline-block relative group py-2 px-3 hover:text-secondary">
+                  <a href={item.link}  className="inline-block font-medium relative group py-2 px-3 hover:text-secondary">
                     <div className="w-2 h-2 bg-secondary absolute mt-4 rounded-full left-1/2 -translate-x-1/2 top-1/2 bottom-0 hidden group-hover:block"></div>
                     {item.title}
                   </a>

@@ -1,11 +1,11 @@
-import Navbar from "./Components/Navbar/Navbar"
+import Hero from "./Components/Hero/Hero"
 
 
 function App() {
 
   return (
     <main className="overflow-x-hidden bg-white text-dark">
-      <Navbar></Navbar>
+      <Hero></Hero>
     </main>
   )
 }
