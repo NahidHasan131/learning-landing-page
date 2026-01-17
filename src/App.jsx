@@ -1,6 +1,8 @@
 import Banner from "./Components/Banner/Banner"
+import CommunityBanner from "./Components/Banner/CommunityBanner"
 import Hero from "./Components/Hero/Hero"
 import Services from "./Components/Services/Services"
+import Subscribe from "./Components/Subscribe/Subscribe"
 
 
 function App() {
@@ -10,6 +12,8 @@ function App() {
       <Hero></Hero>
       <Services></Services>
       <Banner></Banner>
+      <Subscribe></Subscribe>
+      <CommunityBanner></CommunityBanner>
     </main>
   )
 }
