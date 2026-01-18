@@ -1,3 +1,4 @@
+import Footer from "./assets/Footer"
 import Banner from "./Components/Banner/Banner"
 import CommunityBanner from "./Components/Banner/CommunityBanner"
 import Hero from "./Components/Hero/Hero"
@@ -14,6 +15,7 @@ function App() {
       <Banner></Banner>
       <Subscribe></Subscribe>
       <CommunityBanner></CommunityBanner>
+      <Footer></Footer>
     </main>
   )
 }
